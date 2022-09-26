@@ -18,7 +18,7 @@ def index():
             ca = certifi.where()
 
             dbConn = pymongo.MongoClient(
-                f"mongodb+srv://sach7:sach7@cluster0.mhg7e.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+                f"mongodb+srv://<user>:<password>@cluster0.mhg7e.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
                 tlsCAFile=ca)
             # Add <userID> & <Password> for MongoDB Atlas cloud
 
